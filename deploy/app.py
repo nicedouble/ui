@@ -19,7 +19,7 @@ if 'r1' not in st.session_state:
 if 'r2' not in st.session_state:
     st.session_state['r2'] = False
 
-current_path = os.path.abspath('../app')
+current_path = os.path.abspath('.')
 tabs = st.tabs(['电池健康评价模型', '电池预警模型'])
 
 with tabs[0]:
