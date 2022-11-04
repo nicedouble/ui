@@ -205,9 +205,9 @@ if menus == '电池健康评价模型':
             plt.rcParams['font.sans-serif'] = ['SimHei']
             plt.rcParams['font.family'] = ['sans-serif']
             plt.figure(figsize=(8, 8))
-            plt.bar(x, data_score['训练分数'], width=width, edgecolor="k", color=Color[3], label='训练分数', hatch='-')
-            plt.bar(x + width, data_score['测试分数'], width=width, edgecolor="k", color=Color[2], label='测试分数', hatch='.',
-                    tick_label=data_score['模型'])
+            plt.bar(x, data_score['训练分数'], width=width, edgecolor="k", color=Color[3], label='train score', hatch='-')
+            plt.bar(x + width, data_score['测试分数'], width=width, edgecolor="k", color=Color[2], label='test score',
+                    hatch='.',tick_label=data_score['模型'])
             plt.xticks(fontsize=24)
             plt.yticks(fontsize=24)
             plt.legend(loc=9, bbox_to_anchor=(0.5, 1.15), borderaxespad=0, fontsize=20)
@@ -334,9 +334,9 @@ if menus == '电池预警模型':
             plt.rcParams['font.sans-serif'] = ['SimHei']
             plt.rcParams['font.family'] = ['sans-serif']
             plt.figure(figsize=(8, 8))
-            plt.bar(x, data_score['训练分数'], width=width, edgecolor="k", color=Color[1], label='训练分数', hatch='-')
-            plt.bar(x + width, data_score['测试分数'], width=width, edgecolor="k", color=Color[0], label='测试分数', hatch='.',
-                    tick_label=data_score['模型'])
+            plt.bar(x, data_score['训练分数'], width=width, edgecolor="k", color=Color[1], label='train score', hatch='-')
+            plt.bar(x + width, data_score['测试分数'], width=width, edgecolor="k", color=Color[0], label='test score',
+                    hatch='.', tick_label=data_score['模型'])
             plt.xticks(fontsize=24)
             plt.yticks(fontsize=24)
             plt.legend(loc=9, bbox_to_anchor=(0.5, 1.15), borderaxespad=0, fontsize=20)
